@@ -44,11 +44,10 @@ Types of Build Tools:
 - **CRIU (Checkpoint/Restore in Userspace)**: A tool to freeze a running container and restore it later.
 
 ### Analysis of the problem
-![](images/gradle.png)
 
 The objective of this assignment is to understand and use Docker, a popular containerization tool, to build, manage, and run containerized applications. The focus is on creating Docker images, managing container lifecycles, and automating deployment processes.
 
-**Basic Gradle Workflow**:
+**Basic Docker Workflow**:
 
 The basic workflow involves creating a Dockerfile, building an image, running the container, and deploying the application:
 
