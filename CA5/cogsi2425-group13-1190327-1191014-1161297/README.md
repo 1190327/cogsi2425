@@ -1,4 +1,4 @@
-## CA2 - COGSI_C Group
+## COGSI_C Group 13
 
 * Afonso Bertão - 1190327
 * Rodrigo Costa - 1191014
