@@ -475,12 +475,13 @@ Podman aims to be a drop-in replacement for Docker. Many Docker commands can be 
     **docker build -> podman build**
 
 **Podman Instead of Docker**
-| Comparative   | Reasons | 
-|---------------|-----------------|
-| Security      | The daemonless and rootless architecture makes Podman more secure.  |
-| Flexibility   | Podman works seamlessly in environments where a daemon might not be feasible  |
-| Lightweight   | Without a central daemon, Podman consumes fewer resources  | 
-| Kubernetes Compatibility   | Podman simplifies the transition to Kubernetes workflows. | 
+
+| Comparative              | Reasons                                                                      | 
+|--------------------------|------------------------------------------------------------------------------|
+| Security                 | The daemonless and rootless architecture makes Podman more secure.           |
+| Flexibility              | Podman works seamlessly in environments where a daemon might not be feasible |
+| Lightweight              | Without a central daemon, Podman consumes fewer resources                    | 
+| Kubernetes Compatibility | Podman simplifies the transition to Kubernetes workflows.                    | 
 
 Podman is more suited for running application containers with Docker-compatible workflows and provides a lightweight and daemonless alternative to Docker.
 
@@ -573,12 +574,13 @@ CREATE TABLE EMPLOYEE (
 ```
 
 Troubleshootings:
-| Issue   | Solution | 
-|---------------|-----------------|
-| Unable to locate package podman-compose  | sudo apt update && sudo apt install python3-pip -y &&  pip3 install podman-compose|
-| The script podman-compose is installed in '/home/username/.local/bin' which is not on PATH  | echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.bashrc &&   source ~/.bashrc|
-| Error validating CNI config file | Change `cniVersion` file locate at /home/username/.config/cni/net.d/alternatives-solution_app-network.conflist | 
-| Registry for images  | Edit registries.conf locate at /etc/containers/ and add the pattern, such as Docker Hub: **unqualified-search-registries = ["docker.io", "quay.io"]**| 
+
+| Issue                                                                                      | Solution                                                                                                                                              | 
+|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Unable to locate package podman-compose                                                    | sudo apt update && sudo apt install python3-pip -y &&  pip3 install podman-compose                                                                    |
+| The script podman-compose is installed in '/home/username/.local/bin' which is not on PATH | echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.bashrc &&   source ~/.bashrc                                                                          |
+| Error validating CNI config file                                                           | Change `cniVersion` file locate at /home/username/.config/cni/net.d/alternatives-solution_app-network.conflist                                        | 
+| Registry for images                                                                        | Edit registries.conf locate at /etc/containers/ and add the pattern, such as Docker Hub: **unqualified-search-registries = ["docker.io", "quay.io"]** | 
 
 
 **Attachments:**
